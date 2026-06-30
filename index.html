@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         
-            .navbar {
+         .navbar {
             background-color: #6F4E37;
         }
 
@@ -41,7 +41,24 @@
         .hover-container{
             background-color: #6F4E37;
         }
+        .product-section{
+          background:#6F4E37;
+          padding:40px 20px;
+        }
+        .footer-theme{
+        background-color:#6F4E37 !important;
+        color:white;
+        }
 
+        .footer-theme h3{
+            color:#ffe4b5;
+        }
+
+        .footer-theme p,
+        .footer-theme li{
+            color:white;
+        }
+        
     </style>
     
   </head>
@@ -95,7 +112,7 @@
 
 <!-- main sectoin start -->
     <main>
-        <section>
+        <section class="md-4">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-slide="carousel-slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -129,7 +146,7 @@
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="images/cake 1.jpg" class="d-block w-100" alt="...">
+                <img src="images/cake 1.jpg" class="d-block w-100" mb-5 alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Sweet moments become special with our tasty desserts.
                         Made fresh to add joy to your celebrations.</h5>
@@ -150,18 +167,21 @@
                 </main>
 
         <!-- About section -->
-         <section class="mt-5">
+         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <p class="fst-italic lh-lg">
+                    <div class="col-md-7">
+                        <h1 class="fs-1 fw-semibold fst-italic mt-5 md-5">About Us</h1>
+                        <p class="fst-italic lh-lg fs-4 fw-semibold">
                            Welcome to Mune's Kitchen, where delicious food meets love and tradition. We prepare fresh, tasty, and homemade-style dishes using quality ingredients and special recipes. Our goal is to give every customer a wonderful food experience with great taste, cleanliness, and friendly service. From traditional flavors to modern dishes, every meal is made with care and passion. At Mune's Kitchen, we believe that good food brings people together and creates beautiful memories. 
                         </p>
                     </div>
-                    <div class="col-md-4">
-                    <picture>
-                        <img src="images/resturant 4.jpg" width="300px" height="200px" class="img-fluid" />
-                        
+                    <div class="col-md-5 d-flex justify-content-center align-items-center">
+                    <picture class="md-3 mt-3">
+                        <img src="images/theme 1.jpg"
+                            width="500px" 
+                            height="500px" 
+                            class="img-fluid rounded-4" />
                     </picture>
                     </div>
                 </div>
@@ -169,11 +189,11 @@
          </section>
 
          <!-- product section -->
-          <section class="mt-5" bg-brown>
+          <section class="product-section" >
             <div class="container">
-                <div class="row">
-                    <h1 class="text-white p-4">Our Product</h1>
-                    <div class="col-md-3 mb-3">
+                <div class="row mt-2">
+                    <h1 class="text-white p-4 mt-3">Our Product</h1>
+                    <div class="col-md-3">
                         <div class="card">
                             <img src="images/resturant 2.jpg"
                                 class="card-img-top" alt="..." />
@@ -181,12 +201,14 @@
                                 <h5 class="card-title">
                                     Coffe
                                 </h5>
+                                <h1 class="fs-2">₹ 120</h1>
                                 <p>
                          Coffee is a refreshing drink loved by people around the world.
                          It gives energy and helps to keep us active throughout the day.
                          The rich aroma and delicious taste make coffee a favorite choice.
                          
                                </p>
+                               
                           <a href="#" class="btn btn-primary"> Add to Card</a>
                             </div>
                         </div>
@@ -200,11 +222,13 @@
                                 <h5 class="card-title">
                                     Pizza
                                 </h5>
+                                <h1 class="fs-2">₹ 350</h1>
                                 <p>
                          Pizza is a delicious and popular food loved by people of all ages.
                          It is made with a soft crust, tasty sauce, cheese, and fresh toppings.
                          Every bite gives a perfect combination of flavors and textures.
                                </p>
+                               
                           <a href="#" class="btn btn-primary"> Add to Card</a>
                             </div>
                         </div>
@@ -218,11 +242,34 @@
                                 <h5 class="card-title">
                                     Cake
                                 </h5>
+                                <h1 class="fs-2">₹ 599</h1>
                                 <p>
                          Cake is a sweet and delicious dessert enjoyed on special occasions.
                          It comes in many flavors like chocolate, vanilla, and fruit.
                          A soft and creamy cake makes every celebration more memorable.
                                </p>
+                               
+                          <a href="#" class="btn btn-primary"> Add to Card</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="images/mocktil.png" height="200px"
+                                class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Mocktil
+                                </h5>
+                                 <h1 class="fs-2">₹ 99</h1>
+                                <p>
+                               Fresh and refreshing drinks made with fruity flavors.
+                               Perfect choice to enjoy with your favourite meals.
+                               Refreshing and colorful mocktails made with fresh fruits and amazing flavors to brighten your moments.
+
+                               </p>
+                              
                           <a href="#" class="btn btn-primary"> Add to Card</a>
                             </div>
                         </div>
@@ -232,7 +279,7 @@
           </section>
 
           <!-- service section start -->
-           <section class="mt-5">
+           <!-- <section class="mt-5">
                 <div class="container">
                     <div class="row">
                         <h1 class="text-primary pd-4">Our Service</h1>
@@ -260,7 +307,146 @@
                     </div>
                 </div>
            </section>
+            -->
 
+<section class="mt-5">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center mb-5" style="color:#6b3e26;">
+                Our Services
+            </h1>
+            <div class="col-md-6">
+                <ul class="list-group shadow-lg rounded-4">
+                    <li class="list-group-item active text-center fs-4"
+                    style="background:#6b3e26;">
+                        🍕 Food Services
+                    </li>
+                    <li class="list-group-item">
+                        🍽️ Fresh Homemade Food
+                    </li>
+                    <li class="list-group-item">
+                        🍕 Delicious Pizza & Snacks
+                    </li>
+                    <li class="list-group-item">
+                        🥗 Quality Ingredients
+                    </li>
+                    <li class="list-group-item">
+                        ✨ Hygienic Cooking
+                    </li>
+                </ul>
+                <div class="text-center mt-3">
+                    <button class="btn btn-outline-warning">
+                        View More
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <ul class="list-group shadow-lg rounded-4">
+                    <li class="list-group-item active text-center fs-4"
+                    style="background:#6b3e26;">
+                        🎂 Special Services
+                    </li>
+
+                    <li class="list-group-item">
+                        🎂 Custom Cakes & Pastries
+                    </li>
+
+                    <li class="list-group-item">
+                        ☕ Coffee & Drinks
+                    </li>
+
+                    <li class="list-group-item">
+                        🎉 Birthday Orders
+                    </li>
+
+                    <li class="list-group-item">
+                        🚚 Online Delivery
+                    </li>
+
+                </ul>
+                <div class="text-center mt-3">
+                    <button class="btn btn-outline-warning">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- footer start -->
+ <footer class="footer-theme mt-5">
+    <div class="container py-5">
+        <div class="row g-4">
+<!-- About -->
+        <div class="col-md-3">
+            <h3>About Us</h3>
+            <p>
+        Mune's Kitchen provides delicious food
+        with fresh ingredients and homemade taste.
+        We create happy moments with every meal.
+           </p>
+        </div>
+
+<!-- Product Overview -->
+
+<div class="col-md-3">
+    <h3>
+    Our Products
+    </h3>
+        <ul class="list-unstyled">
+            <li>🍕 Pizza</li>
+            <li>🍔 Burger</li>
+            <li>☕ Coffee</li>
+            <li>🍰 Cake</li>
+            <li>🍹 Mocktail</li>
+        </ul>
+</div>
+
+<!-- Contact -->
+
+<div class="col-md-3">
+    <h3>
+    Contact Us
+    </h3>
+        <p>
+    📍 Mune's Kitchen
+        </p>
+    <p>
+📞 +91 9876543210
+    </p>
+    <p>
+✉ muneskitchen@gmail.com
+    </p>
+</div>
+
+<!-- Online Links -->
+
+<div class="col-md-3">
+    <h3 class="text-warning">
+Follow Us
+    </h3>
+    <a href="#" class="btn btn-outline-light m-1">
+Instagram
+    </a>
+    <a href="#" class="btn btn-outline-light m-1">
+Facebook
+    </a>
+    <a href="#" class="btn btn-outline-light m-1">
+WhatsApp
+    </a>
+</div>
+</div>
+<hr>
+<div class="text-center">
+    <p>
+© 2026 Mune's Kitchen | All Rights Reserved
+    </p>
+    </div>
+</div>
+    </footer>
+            <!-- footer end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
